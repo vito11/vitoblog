@@ -4,6 +4,8 @@ title:  "Android studio 2.2 自动编译打包NDK shared library 和 executable 
 date:   2017-05-10 13:38:01 +0800
 categories: jekyll update
 ---
+{% include style.css %}
+
 最近用Android studio 2.2写NDK executable时发现IDE并没有将编译生成的executable二进制文件自动打包进APK，调研一番后，整理于此。
 
 首先，右键侧边栏的app，添加assets目录。
