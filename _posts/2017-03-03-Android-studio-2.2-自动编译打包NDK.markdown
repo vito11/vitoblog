@@ -10,7 +10,7 @@ categories: jekyll update
 
 在Android.mk文件上，加上TARGET_OUT这一项，指向assets的文件路径。
 
-{% highlight c++ %}
+```makefile
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -42,11 +42,11 @@ LOCAL_MODULE:= hook
 LOCAL_LDLIBS :=-llog
 TARGET_OUT =./src/main/assets
 include $(BUILD_SHARED_LIBRARY)
-{% endhighlight %}
+```
 
 同时修改build.gradle 添加externalNativeBuild target, 示例如下。
 
-```java
+```Gradle
 apply plugin: 'com.android.application'
 
 android {
@@ -81,7 +81,7 @@ defaultConfig里的abiFilters是设置目标编译的平台，不设置的话，
 
 然后，你可以在java代码中吧这些文件从assets中读写到手机文件系统里，再通过命令行来调用。
 
-```java
+```Java
 private void copyDataToExePath(String srcFileName, String strOutFileName) throws IOException {
     InputStream myInput;
     OutputStream myOutput = new FileOutputStream(strOutFileName);
