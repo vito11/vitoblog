@@ -10,7 +10,7 @@ categories: jekyll update
 
 在Android.mk文件上，加上TARGET_OUT这一项，指向assets的文件路径。
 
-```makefile
+```make
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
