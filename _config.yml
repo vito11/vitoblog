@@ -24,7 +24,7 @@ github_username:  vito11
 # Build settings
 markdown: kramdown
 theme: minima
-highlighter:rouge
+highlighter: rouge
 gems:
   - jekyll-feed
 exclude:
