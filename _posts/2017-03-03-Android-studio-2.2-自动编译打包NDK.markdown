@@ -10,7 +10,7 @@ categories: jekyll update
 
 在Android.mk文件上，加上TARGET_OUT这一项，指向assets的文件路径。
 
-```java
+{% highlight c++ %}
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -42,7 +42,8 @@ LOCAL_MODULE:= hook
 LOCAL_LDLIBS :=-llog
 TARGET_OUT =./src/main/assets
 include $(BUILD_SHARED_LIBRARY)
-```
+{% endhighlight %}
+
 同时修改build.gradle 添加externalNativeBuild target, 示例如下。
 
 ```java
