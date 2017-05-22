@@ -7,17 +7,6 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
-/**
- * code styling
- */
-
-.highlighter-rouge .highlight {
-  background-color: #dddddd;
-}
-
-pre, code {
-   background-color: transparent;
-}
 
 /**
  * Basic styling
@@ -343,10 +332,16 @@ pre {
 /**
  * Syntax highlighting styles
  */
+
+/**
+ * code styling
+ */
+
+
 .highlight {
   background: #fff; }
   .highlighter-rouge .highlight {
-    background: #eef; }
+    background: #dddddd; }
   .highlight .c {
     color: #998;
     font-style: italic; }
@@ -480,3 +475,7 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+pre, code {
+   background-color: transparent;
+}
