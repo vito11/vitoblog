@@ -7,18 +7,18 @@ categories: Tech C#
 
 最近有一个需求：针对基于mono框架的程序，在C#层面实现函数hook。网上搜罗一番，并没有找到现成可用的工具，故自己调研,  整理于此。
 
-思路与原理
+## 思路与原理
 
 C#代码实际上是被编译成了中间语言CIL(Common Intermediate Language,CIL), CIL在运行时会被mono虚拟机解释为机器语言来执行。所以，一个显而易见的思路是，先hook mono虚拟机中CIL解释器，然后通过修改C#函数所对应的CIL来实现hook。
 
 
-前提条件和准备工作
+## 前提条件和准备工作
 
 1. 必须具备系统管理员权限。例如，linux或者android具备root权限，windows具有管理员权限。（由于ios平台本身不支持即时编译，所以并不适用于此方法）。
 
 2. 已经具备native层的Hook能力。例如，linux或者android平台利用ptrace进行so的远程注入，windows平台利用easyhook工具进行dll的远程注入。
 
-实现
+## 实现
 
 下面我以windows平台为例来介绍如何实现mono C# hook, 本文假定读者已经了解了如何使用easyhook （不太了解easyhook的读者可以自行调研下，很简单的一个hook工具）。有Android和linux平台hook需求的读者可以参考此文原理自行实现，只是底层hook方法换成ptrace而已。
 
