@@ -81,7 +81,6 @@ public void getCameraSupportedSize()
         将获取到分辨率列表序列化写入某个文件中
 }
 ```
-Hook点
 
 读文件，反序列化获取手机支持的分辨率列表
 ```java
@@ -112,6 +111,7 @@ ptrace hook的大体步骤和原理如下：
 4. 大体同步骤三，不过pc寄存器改为dlsym的函数地址，传参改为my_memcpy，这样就可以找到my_memcpy在目标进程的函数地址。
 
 5. 找到目标进程中got表memcpy的链接地址，替换为我们的My_memcpy。
+
 ```c
 int main(int argc, char *argv[]) {
 
@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 ```
-核心代码很简单，主要是利用了别人写好的库,  这里贴出github里库的链接。
+核心代码很简单，主要是利用了别人写好的库,  这里贴出github里[库的链接]。
 
 使用的时候要注意2个宏的定义，Android这个宏是肯定需要的，thumb这个宏不同的机器不一样，旧一点的手机可能指令集是用的thumb。后来我稍微修改了一下，删掉了thumb这个宏，通过pc指令的最后一位来动态判断是thumb还是arm。
 ```c
@@ -151,3 +151,4 @@ if (regs.ARM_pc& 1) {
 最后附上github[项目地址]。
 
 [项目地址]: https://github.com/vito11/CameraHook
+[库的链接]: https://github.com/hbhdytf
