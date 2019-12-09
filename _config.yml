@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Aion中文信息站
+title: CyprtoDogStaking
 email: limm.hq@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   Aion打赏: 0xa08ab689ded7928decfebcbc5300f2a4052834f9c0504da76eba51724a08e7ae
+   Aion donate: 0xa08ab689ded7928decfebcbc5300f2a4052834f9c0504da76eba51724a08e7ae
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
