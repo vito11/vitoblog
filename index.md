@@ -6,7 +6,6 @@ layout: page
 ---
 
 <img src="aion.png" alt="drawing"/>
-
 <img src="joke.jpg" alt="drawing"/>
 
 + #### This staking pool is non-profit, 2% fee is charged to cover basic power cost.
