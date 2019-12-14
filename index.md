@@ -6,7 +6,7 @@ layout: page
 ---
 <img src="whenhuobi.jpg" alt="drawing"/>
 
-+ **This staking pool is non-profit, 2% fee is charged to cover basic power cost.**
++ ### This staking pool is non-profit, 2% fee is charged to cover basic power cost.
 + **Although fee is lower than most pools, the performance is as good as top pools.**
 + **When huobi? When coinbase? Just a joke, I love Aion.**
 + **I operate this pool to secure Aion network.**
