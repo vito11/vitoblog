@@ -5,7 +5,7 @@
 layout: page
 ---
 
-<img src="aion-open-application-network-750x375.jpg" alt="drawing"/>
+<img src="aion.png" alt="drawing"/>
 
 <img src="joke.jpg" alt="drawing"/>
 
