@@ -1,7 +1,5 @@
 ---
-layout: post
-title:  "AION"
-categories: AION
+layout: page
 ---
 
 test
