@@ -4,4 +4,4 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
 ---
-test
+<img src="whenhuobi.jpg" alt="drawing" width="500"/>
