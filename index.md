@@ -4,7 +4,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: page
 ---
-<img src="whenhuobi.jpg" alt="drawing"/>
+
+<img src="aion-open-application-network-750x375.jpg" alt="drawing"/>
+
+<img src="joke.jpg" alt="drawing"/>
 
 + #### This staking pool is non-profit, 2% fee is charged to cover basic power cost.
 + #### Although fee is lower than most pools, the performance is as good as top pools.
